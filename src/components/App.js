@@ -49,7 +49,7 @@ function App() {
             .then(jsonResponse => {
                 dispatch({
                     type: "SEARCH_CITIES_SUCCESS",
-                    payload: jsonResponse
+                    payload: [jsonResponse]
                 });
             });
     }, []);
@@ -62,10 +62,10 @@ function App() {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800`)
             .then(response => response.json())
             .then(jsonResponse => {
-                if (jsonResponse.Response === "True") {
+                if (jsonResponse.base == "stations") {
                     dispatch({
                         type: "SEARCH_CITIES_SUCCESS",
-                        payload: jsonResponse.Search
+                        payload: [jsonResponse]
                     });
                 } else {
                     dispatch({
@@ -89,9 +89,13 @@ function App() {
                         {loading && !errorMessage ? (
                             <span>loading... </span>
                         ) : errorMessage ? (
-                            <div className="errorMessage">{errorMessage}</div>
+                            cities.map((city, index) => (
+                                <WeatherCard key={`${index}-${city.name}`} city={city} />
+                            ))
                         ) : (
-                            <WeatherCard key={`1-${cities.id}`} city={cities}/>
+                            cities.map((city, index) => (
+                                <WeatherCard key={`${index}-${city.name}`} city={city} />
+                            ))
                         )}
                     <AddCard/>
                 </main>
