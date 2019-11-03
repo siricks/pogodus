@@ -5,6 +5,8 @@
   grid-template-columns: auto;
   grid-template-rows: 0.5fr auto;
   position: relative;
+  transition: background 300ms linear;
+  background-image: linear-gradient(to top, #5ee7df 0%, #66a6ff 100%);
 }
 
 /*
@@ -142,6 +144,7 @@
 
 /*Header*/
 .main__header {
+  background-color: #fff;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 0.25fr;
@@ -151,7 +154,7 @@
   margin: 0;
   align-items: center;
   transition: background-color 500ms linear;
-  animation: 1s ease-in-out 0ms 1 fadein;
+  animation: slidedown 0.5s ease-in-out, fadein 1s ease-in-out;
 }
 
 .main__header-dark {
@@ -685,4 +688,14 @@ Weather Card Styling
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: #2B244D;
+}
+
+/*Home Layout*/
+.main__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  position: relative;
 }
