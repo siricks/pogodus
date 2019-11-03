@@ -1,5 +1,5 @@
 import React, {useReducer, useEffect} from "react";
-import './App.css';
+import './App.scss';
 import Aside from "./Aside";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -62,7 +62,7 @@ function App() {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800`)
             .then(response => response.json())
             .then(jsonResponse => {
-                if (jsonResponse.base == "stations") {
+                if (jsonResponse.base === "stations") {
                     dispatch({
                         type: "SEARCH_CITIES_SUCCESS",
                         payload: [jsonResponse]
