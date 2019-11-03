@@ -7,7 +7,7 @@ import AddCard from "./AddCard";
 import WeatherCard from "./WeatherCard";
 import Search from "./Search";
 
-const API_URL = "https://api.openweathermap.org/data/2.5/weather?q=Paris&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800";
+const API_URL = "https://api.openweathermap.org/data/2.5/weather?q=Saint Petersburg&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800";
 
 const initialState = {
     loading: true,
