@@ -83,9 +83,9 @@ function App() {
             <Aside/>
             <div className="root__container">
                 <Header/>
-
+                <Search search={search}/>
                 <main className="main__container">
-                        <Search search={search}/>
+
                         {loading && !errorMessage ? (
                             <span>loading... </span>
                         ) : errorMessage ? (

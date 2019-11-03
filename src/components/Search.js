@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import {ReactComponent as SearchIcon} from '../img/header-icons/search.svg';
 
 const Search = (props) => {
     const [searchValue, setSearchValue] = useState("");
@@ -19,14 +19,19 @@ const Search = (props) => {
     }
 
     return (
-        <form className="search">
-            <input
-                value={searchValue}
-                onChange={handleSearchInputChanges}
-                type="text"
-            />
-            <input onClick={callSearchFunction} type="submit" value="SEARCH"/>
-        </form>
+        <div className="top-search">
+            <form className="search">
+                <input
+                    value={searchValue}
+                    onChange={handleSearchInputChanges}
+                    type="text"
+                    className="search__input"
+                />
+                <button onClick={callSearchFunction} type="submit" className="search__btn">
+                    <SearchIcon/>
+                </button>
+            </form>
+        </div>
     );
 }
 
