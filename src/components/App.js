@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from "react";
+import React, {useReducer, useEffect} from "react";
 import './App.css';
 import Aside from "./Aside";
 import Header from "./Header";
@@ -7,7 +7,7 @@ import AddCard from "./AddCard";
 import WeatherCard from "./WeatherCard";
 import Search from "./Search";
 
-const API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b";
+const API_URL = "https://api.openweathermap.org/data/2.5/weather?q=Paris&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800";
 
 const initialState = {
     loading: true,
@@ -47,10 +47,9 @@ function App() {
         fetch(API_URL)
             .then(response => response.json())
             .then(jsonResponse => {
-
                 dispatch({
                     type: "SEARCH_CITIES_SUCCESS",
-                    payload: jsonResponse.Search
+                    payload: jsonResponse
                 });
             });
     }, []);
@@ -77,25 +76,23 @@ function App() {
             });
     };
 
-    const { cities, errorMessage, loading } = state;
+    const {cities, errorMessage, loading} = state;
 
     return (
         <div className="App">
             <Aside/>
             <div className="root__container">
                 <Header/>
-                <Search search={search} />
+
                 <main className="main__container">
-                    <div className="main-container__bg"></div>
-                    {loading && !errorMessage ? (
-                        <span>loading... </span>
-                    ) : errorMessage ? (
-                        <div className="errorMessage">{errorMessage}</div>
-                    ) : (
-                        cities.map((city, index) => (
-                            <WeatherCard key={`${index}-${city.Title}`} city={city} />
-                        ))
-                    )}
+                        <Search search={search}/>
+                        {loading && !errorMessage ? (
+                            <span>loading... </span>
+                        ) : errorMessage ? (
+                            <div className="errorMessage">{errorMessage}</div>
+                        ) : (
+                            <WeatherCard key={`1-${cities.id}`} city={cities}/>
+                        )}
                     <AddCard/>
                 </main>
                 <Footer/>
