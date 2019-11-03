@@ -5,6 +5,7 @@ import { ReactComponent as Fog } from '../img/weather-icons/Fog.svg';
 import { ReactComponent as Storm } from '../img/weather-icons/Storm.svg';
 import { ReactComponent as Sunny } from '../img/weather-icons/Sunny.svg';
 import { ReactComponent as Rain } from '../img/weather-icons/Rain.svg';
+import { ReactComponent as Haze } from '../img/weather-icons/Haze.svg';
 
 const WeatherConditionIcon = ({condition}) => {
 
@@ -23,6 +24,9 @@ const WeatherConditionIcon = ({condition}) => {
             case 'Sunny':
             case 'Clear':
                 return <Sunny/>;
+
+            case 'Haze':
+                return <Haze/>;
 
             case 'Fog':
                 return  <Fog/>;
