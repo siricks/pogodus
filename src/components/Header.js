@@ -4,23 +4,23 @@ import {ReactComponent as Hamburger} from '../img/header-icons/menu.svg';
 
 const Header = (props) => {
     return (
-        <header className="main__header">
+        <header className="header-main">
 
-            <div className="left__section">
+            <div className="header-main__left-section">
                 <Hamburger/>
                 <Logo/>
             </div>
 
-            <h3 className="date__text">Today</h3>
+            <h3 className="header-main__today-text">Today</h3>
 
 
             <div className="mode-toggle__container">
                 <span className="mode-toggle__text">Light</span>
 
-                <label className="toggle-button__container">
-                    <input type="checkbox" className="mode-toggle__input"/>
-                    <span className="mode-toggle__bg"></span>
-                    <span className="mode-toggle__circle"></span>
+                <label className="toggle-button">
+                    <input type="checkbox" className="toggle-button__input"/>
+                    <span className="toggle-button__bg"></span>
+                    <span className="toggle-button__circle"></span>
                 </label>
 
 

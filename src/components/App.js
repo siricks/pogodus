@@ -83,23 +83,23 @@ function App() {
             <Aside/>
             <div className="root__container">
                 <Header/>
-                <Search search={search}/>
-                <main className="main__container">
+                {/*<Search search={search}/>*/}
+                {/*<main className="main__container">*/}
 
-                        {loading && !errorMessage ? (
-                            <span>loading... </span>
-                        ) : errorMessage ? (
-                            cities.map((city, index) => (
-                                <WeatherCard key={`${index}-${city.name}`} city={city} />
-                            ))
-                        ) : (
-                            cities.map((city, index) => (
-                                <WeatherCard key={`${index}-${city.name}`} city={city} />
-                            ))
-                        )}
-                    <AddCard/>
-                </main>
-                <Footer/>
+                {/*        {loading && !errorMessage ? (*/}
+                {/*            <span>loading... </span>*/}
+                {/*        ) : errorMessage ? (*/}
+                {/*            cities.map((city, index) => (*/}
+                {/*                <WeatherCard key={`${index}-${city.name}`} city={city} />*/}
+                {/*            ))*/}
+                {/*        ) : (*/}
+                {/*            cities.map((city, index) => (*/}
+                {/*                <WeatherCard key={`${index}-${city.name}`} city={city} />*/}
+                {/*            ))*/}
+                {/*        )}*/}
+                {/*    <AddCard/>*/}
+                {/*</main>*/}
+                {/*<Footer/>*/}
             </div>
         </div>
     );
