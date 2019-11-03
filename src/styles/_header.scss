@@ -1,0 +1,152 @@
+/*Header*/
+.header-main {
+  background-color: #fff;
+  width: 100%;
+  display: grid;
+
+  @media (min-width: $p1440) {
+    grid-template-columns: 1fr 1fr 0.25fr;
+  }
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  @media (min-width: $p1024) {
+    justify-items: center;
+  }
+  max-height: 8rem;
+
+  @media (min-width: $p768) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 4rem;
+  }
+
+  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+  margin: 0;
+  align-items: center;
+  transition: background-color 500ms linear;
+  animation: slidedown 0.5s ease-in-out, fadein 1s ease-in-out;
+
+  &-dark {
+    background-color: #2B244D;
+    color: white;
+  }
+
+
+  &__left-section {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: .5fr 1fr;
+    @media (min-width: $p768) {
+      grid-template-columns: 1fr 1fr;
+      max-width: 5rem;
+    }
+  }
+
+  &__hamburger {
+    position: relative;
+    z-index: 35;
+    height: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+
+    &__fill {
+      fill: #2B244D;
+      &-dark {
+        fill: #ffff;
+      }
+    }
+  }
+
+  &-logo {
+    height: 2rem;
+    margin-left: 1rem;
+  }
+
+  &__today-text {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    display: inline;
+    margin: 0.5rem 0;
+    @media (max-width: 1439px) {
+      text-align: center;
+    }
+  }
+
+
+}
+
+/* Day/night switch */
+.mode-toggle {
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    @media (max-width: $p1440) {
+     justify-content: center;
+    }
+
+    .toggle-button {
+      cursor: pointer;
+      position: relative;
+      margin: 0 .75rem 0 .25rem;
+      display: inline-flex;
+
+      &__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+
+      &__bg {
+        height: 1rem;
+        width: 2rem;
+        border-radius: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: inline-block;
+        transition: background-color 300ms linear;
+
+        &-checked {
+          background-color: #FF0070;
+        }
+      }
+
+      &__circle {
+        height: 1.30rem;
+        width: 1.30rem;
+        background-color: #2B244D;
+        position: absolute;
+        top: -0.2rem;
+        border-radius: 50%;
+        box-shadow: 0 0 0 rgba(0, 0, 255, 0.5);
+        transition: left 300ms linear;
+        left: 0.1rem;
+
+        &-checked {
+          background-color: white;
+          left: 1.5rem;
+        }
+      }
+    }
+
+
+  }
+
+  &__text {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
