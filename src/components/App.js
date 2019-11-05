@@ -80,7 +80,7 @@ function App() {
 
     return (
         <div className="App">
-            <Aside/>
+            {/*<Aside/>*/}
             <div className="root__container">
                 <Header/>
                 <Search search={search}/>
