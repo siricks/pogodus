@@ -7,6 +7,9 @@
   align-items: center;
   justify-content: center;
   grid-template-columns: 70%;
+  @media (max-width: $p1024) {
+    padding-top: 2rem;
+  }
 
   &-form {
     position: relative;
