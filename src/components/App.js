@@ -7,7 +7,7 @@ import AddCard from "./AddCard";
 import WeatherCard from "./WeatherCard";
 import Search from "./Search";
 import {GlobalStyles} from './global';
-import Toggle from './Toggle';
+
 
 import {useDarkMode} from './useDarkMode';
 import {ThemeProvider} from 'styled-components';
@@ -65,8 +65,7 @@ function App() {
 
     if (!componentMounted) {
         return <div/>
-    }
-    ;
+    };
 
 
     const search = searchValue => {
@@ -98,9 +97,8 @@ function App() {
             <div className="App">
                 {/*<Aside/>*/}
                 <GlobalStyles/>
-                <Toggle theme={theme} toggleTheme={toggleTheme}/>
                 <div className="root__container">
-                    <Header/>
+                    <Header theme={theme} toggleTheme={toggleTheme}/>
                     <Search search={search}/>
                     <main className="main__container">
 

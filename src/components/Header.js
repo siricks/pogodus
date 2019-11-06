@@ -1,8 +1,9 @@
 import React from "react";
 import {ReactComponent as Logo} from '../img/header-icons/logo.svg';
 import {ReactComponent as Hamburger} from '../img/header-icons/menu.svg';
+import Toggle from './Toggle';
 
-const Header = (props) => {
+const Header = ({theme, toggleTheme}) => {
     return (
         <header className="header-main">
 
@@ -15,16 +16,7 @@ const Header = (props) => {
 
 
             <div className="mode-toggle__container">
-                <span className="mode-toggle__text">Light</span>
-
-                <label className="toggle-button">
-                    <input type="checkbox" className="toggle-button__input"/>
-                    <span className="toggle-button__bg"></span>
-                    <span className="toggle-button__circle"></span>
-                </label>
-
-
-                <span className="mode-toggle__text">Dark</span>
+                <Toggle theme={theme} toggleTheme={toggleTheme}/>
             </div>
 
         </header>
