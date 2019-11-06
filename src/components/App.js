@@ -1,4 +1,4 @@
-import React, {useReducer, useEffect} from "react";
+import React, {useReducer, useEffect, useState} from "react";
 import './App.scss';
 import Aside from "./Aside";
 import Header from "./Header";
@@ -6,6 +6,12 @@ import Footer from "./Footer";
 import AddCard from "./AddCard";
 import WeatherCard from "./WeatherCard";
 import Search from "./Search";
+import {GlobalStyles} from './global';
+import Toggle from './Toggle';
+
+import {useDarkMode} from './useDarkMode';
+import {ThemeProvider} from 'styled-components';
+import {lightTheme, darkTheme} from './theme';
 
 const API_URL = "https://api.openweathermap.org/data/2.5/weather?q=Saint Petersburg&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800";
 
@@ -54,6 +60,15 @@ function App() {
             });
     }, []);
 
+    const [theme, toggleTheme, componentMounted] = useDarkMode();
+    const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+    if (!componentMounted) {
+        return <div/>
+    }
+    ;
+
+
     const search = searchValue => {
         dispatch({
             type: "SEARCH_CITIES_REQUEST"
@@ -79,29 +94,33 @@ function App() {
     const {cities, errorMessage, loading} = state;
 
     return (
-        <div className="App">
-            {/*<Aside/>*/}
-            <div className="root__container">
-                <Header/>
-                <Search search={search}/>
-                <main className="main__container">
+        <ThemeProvider theme={themeMode}>
+            <div className="App">
+                {/*<Aside/>*/}
+                <GlobalStyles/>
+                <Toggle theme={theme} toggleTheme={toggleTheme}/>
+                <div className="root__container">
+                    <Header/>
+                    <Search search={search}/>
+                    <main className="main__container">
 
                         {loading && !errorMessage ? (
                             <span>loading... </span>
                         ) : errorMessage ? (
                             cities.map((city, index) => (
-                                <WeatherCard key={`${index}-${city.name}`} city={city} />
+                                <WeatherCard key={`${index}-${city.name}`} city={city}/>
                             ))
                         ) : (
                             cities.map((city, index) => (
-                                <WeatherCard key={`${index}-${city.name}`} city={city} />
+                                <WeatherCard key={`${index}-${city.name}`} city={city}/>
                             ))
                         )}
-                    <AddCard/>
-                </main>
-                <Footer/>
+                        <AddCard/>
+                    </main>
+                    <Footer/>
+                </div>
             </div>
-        </div>
+        </ThemeProvider>
     );
 }
 
