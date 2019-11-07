@@ -1,37 +1,29 @@
-import { createGlobalStyle } from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-  *,
-  *::after,
-  *::before {
-    box-sizing: border-box;
-  }
   body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
-    padding: 0;
-    margin: 0;
-    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    transition: all 0.25s linear;
-  }
-  footer {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  small {
-    display: block;
-  }
-  button {
-    display: block;
+    background: ${({theme}) => theme.body};
+    color: ${({theme}) => theme.text};
   }
   a {
-    color: ${({ theme }) => theme.text};
+    color: ${({theme}) => theme.text};
   }
+  
+  .header-main {
+    background-color: ${({theme}) => theme.header};
+  }
+  
+  .root__container {
+    background: ${({theme}) => theme.root_bg};
+  }
+  
+  .weather__card {
+    background: ${({theme}) => theme.card_bg};
+  }
+  
+  .add__card {
+   background: ${({theme}) => theme.add_card};
+    color: ${({theme}) => theme.text};
+  }
+  
 `;
