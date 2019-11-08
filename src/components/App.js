@@ -1,17 +1,19 @@
 import React, {useReducer, useEffect, useState} from "react";
+
 import '../styles/main.scss';
-import Aside from "./Aside";
-import Header from "./Header";
-import Footer from "./Footer";
+
+import Aside from "../containers/Aside";
+import Header from "../containers/Header";
+import Footer from "../containers/Footer";
 import AddCard from "../containers/AddCard";
 import WeatherCard from "../containers/WeatherCard";
-import Search from "./Search";
-import {GlobalStyles} from './global';
-
+import Search from "../containers/Search";
 
 import {useDarkMode} from './useDarkMode';
+
 import {ThemeProvider} from 'styled-components';
-import {lightTheme, darkTheme} from './theme';
+import {GlobalStyles} from '../styles-theme/global';
+import {lightTheme, darkTheme} from '../styles-theme/theme';
 
 const API_URL = "https://api.openweathermap.org/data/2.5/weather?q=Saint Petersburg&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800";
 

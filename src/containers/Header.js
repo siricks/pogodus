@@ -1,7 +1,7 @@
 import React from "react";
 import {ReactComponent as Logo} from '../img/header-icons/logo.svg';
 import {ReactComponent as Hamburger} from '../img/header-icons/menu.svg';
-import Toggle from './Toggle';
+import Toggle from './Toggle/Toggle';
 
 const Header = ({theme, toggleTheme}) => {
     return (
