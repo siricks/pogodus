@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1f12e28542eaa4f29bc3df4bf632198",
+    "revision": "d384838b54e064ab01ab02e4d66a5048",
     "url": "/pogodus/index.html"
   },
   {
-    "revision": "0e8dc517d50c202aba54",
+    "revision": "2d98304aa38c98828b4f",
     "url": "/pogodus/static/css/main.b8504a27.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pogodus/static/js/2.cab370ba.chunk.js"
   },
   {
-    "revision": "0e8dc517d50c202aba54",
-    "url": "/pogodus/static/js/main.abfc9563.chunk.js"
+    "revision": "2d98304aa38c98828b4f",
+    "url": "/pogodus/static/js/main.25f8dd07.chunk.js"
   },
   {
     "revision": "cf17b9ebb9b745db6a5f",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pogodus/static/media/Rain.b44b59cc.svg"
   },
   {
-    "revision": "e583d54562e964429b8027f91511c7d5",
-    "url": "/pogodus/static/media/Snow.e583d545.svg"
+    "revision": "7c0033104d155cda1f46cf4c16c46e68",
+    "url": "/pogodus/static/media/Snow.7c003310.svg"
   },
   {
     "revision": "934895c161075fae3a33b80c275aeefb",
