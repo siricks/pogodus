@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pogodus/static/css/main.b8504a27.chunk.css",
-    "main.js": "/pogodus/static/js/main.25f8dd07.chunk.js",
-    "main.js.map": "/pogodus/static/js/main.25f8dd07.chunk.js.map",
+    "main.css": "/pogodus/static/css/main.38ecd946.chunk.css",
+    "main.js": "/pogodus/static/js/main.ffc0ef9c.chunk.js",
+    "main.js.map": "/pogodus/static/js/main.ffc0ef9c.chunk.js.map",
     "runtime-main.js": "/pogodus/static/js/runtime-main.231825e8.js",
     "runtime-main.js.map": "/pogodus/static/js/runtime-main.231825e8.js.map",
     "static/js/2.cab370ba.chunk.js": "/pogodus/static/js/2.cab370ba.chunk.js",
     "static/js/2.cab370ba.chunk.js.map": "/pogodus/static/js/2.cab370ba.chunk.js.map",
     "index.html": "/pogodus/index.html",
-    "precache-manifest.f59cb08629dc59560e7f7463670f55ff.js": "/pogodus/precache-manifest.f59cb08629dc59560e7f7463670f55ff.js",
+    "precache-manifest.168ddcae19196f3d1847c1a178fd66f2.js": "/pogodus/precache-manifest.168ddcae19196f3d1847c1a178fd66f2.js",
     "service-worker.js": "/pogodus/service-worker.js",
-    "static/css/main.b8504a27.chunk.css.map": "/pogodus/static/css/main.b8504a27.chunk.css.map",
+    "static/css/main.38ecd946.chunk.css.map": "/pogodus/static/css/main.38ecd946.chunk.css.map",
     "static/media/AddIcon.857ad6cd.svg": "/pogodus/static/media/AddIcon.857ad6cd.svg",
     "static/media/CityIllustration.82758ac1.svg": "/pogodus/static/media/CityIllustration.82758ac1.svg",
     "static/media/Clouds.6d6a14ed.svg": "/pogodus/static/media/Clouds.6d6a14ed.svg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.231825e8.js",
     "static/js/2.cab370ba.chunk.js",
-    "static/css/main.b8504a27.chunk.css",
-    "static/js/main.25f8dd07.chunk.js"
+    "static/css/main.38ecd946.chunk.css",
+    "static/js/main.ffc0ef9c.chunk.js"
   ]
 }
