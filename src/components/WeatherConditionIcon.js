@@ -6,6 +6,7 @@ import { ReactComponent as Storm } from '../img/weather-icons/Storm.svg';
 import { ReactComponent as Sunny } from '../img/weather-icons/Sunny.svg';
 import { ReactComponent as Rain } from '../img/weather-icons/Rain.svg';
 import { ReactComponent as Haze } from '../img/weather-icons/Haze.svg';
+import { ReactComponent as Snow } from '../img/weather-icons/Snow.svg';
 
 const WeatherConditionIcon = ({condition}) => {
 
@@ -16,6 +17,7 @@ const WeatherConditionIcon = ({condition}) => {
 
             case 'Rain':
             case 'Drizzle':
+            case 'Mist':
                 return  <Rain/>;
 
             case 'Storm':
@@ -30,6 +32,9 @@ const WeatherConditionIcon = ({condition}) => {
 
             case 'Fog':
                 return  <Fog/>;
+
+            case 'Snow':
+                return  <Snow/>;
 
 
             default:
