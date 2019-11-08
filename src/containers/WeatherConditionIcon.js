@@ -10,6 +10,12 @@ import { ReactComponent as Snow } from '../img/weather-icons/Snow.svg';
 
 const WeatherConditionIcon = ({condition}) => {
 
+    /**
+     * Return returns icon depending on weather type
+     *
+     * @param weatherType
+     * @returns {string|*}
+     */
     function renderCondition(weatherType) {
         switch (weatherType) {
             case 'Clouds':

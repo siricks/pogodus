@@ -1,6 +1,13 @@
 import React from "react";
 import WeatherConditionIcon from "./WeatherConditionIcon";
 
+/**
+ * View of city weather card in main page
+ *
+ * @param city - object from API
+ * @returns {*}
+ * @constructor
+ */
 const WeatherCard = ({city}) => {
     return (
         <section className="weather__card">

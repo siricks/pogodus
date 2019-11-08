@@ -9,11 +9,6 @@
   background-image: linear-gradient(to top, #5ee7df 0%, #66a6ff 100%);
 }
 
-
-
-@import "../styles/main.scss";
-
-
 /*
 ================
     Body
@@ -38,29 +33,6 @@
   transition: opacity 300ms linear;
 }
 
-/*
-================-
-    Footer
-================
-*/
-.main__footer {
-  background: transparent;
-  position: absolute;
-  bottom: 1rem;
-  left: 1.5rem;
-  z-index: 100;
-}
-
-.copyright__text {
-  letter-spacing: 0.1rem;
-  color: white;
-}
-
-@media only screen and (max-width: 300px) {
-  .slide-menu {
-    width: 100%;
-  }
-}
 
 /*Home Layout*/
 .main__container {

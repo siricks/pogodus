@@ -1,10 +1,10 @@
 import React, {useReducer, useEffect, useState} from "react";
-import './App.scss';
+import '../styles/main.scss';
 import Aside from "./Aside";
 import Header from "./Header";
 import Footer from "./Footer";
-import AddCard from "./AddCard";
-import WeatherCard from "./WeatherCard";
+import AddCard from "../containers/AddCard";
+import WeatherCard from "../containers/WeatherCard";
 import Search from "./Search";
 import {GlobalStyles} from './global';
 
@@ -65,7 +65,8 @@ function App() {
 
     if (!componentMounted) {
         return <div/>
-    };
+    }
+    ;
 
 
     const search = searchValue => {
