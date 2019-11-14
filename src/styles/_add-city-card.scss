@@ -17,6 +17,14 @@
   border-radius: 1.75rem;
   animation: 1.25s ease-in-out 0ms 1 fadein;
   color: #443282;
+
+  .city-name__text {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1.75rem;
+    padding-bottom: 2rem;
+  }
+
 }
 
 .add__card-dark {
@@ -52,9 +60,3 @@
   position: relative;
 }
 
-.city-name__text {
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  font-size: 1.75rem;
-  padding-bottom: 2rem;
-}
