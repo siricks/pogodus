@@ -1,4 +1,5 @@
 import React, {useReducer, useEffect} from "react";
+import { connect } from 'react-redux';
 
 import '../styles/main.scss';
 
@@ -15,41 +16,14 @@ import {ThemeProvider} from 'styled-components';
 import {GlobalStyles} from '../styles-theme/global';
 import {lightTheme, darkTheme} from '../styles-theme/theme';
 
+import { weather } from '../store/reducers';
+import { initialState } from '../store/weather/reducer';
+
 const API_URL = "https://api.openweathermap.org/data/2.5/weather?q=Saint Petersburg&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800";
 
-const initialState = {
-    loading: true,
-    cities: [],
-    errorMessage: null
-};
-
-const reducer = (state, action) => {
-    switch (action.type) {
-        case "SEARCH_CITIES_REQUEST":
-            return {
-                ...state,
-                loading: true,
-                errorMessage: null
-            };
-        case "SEARCH_CITIES_SUCCESS":
-            return {
-                ...state,
-                loading: false,
-                cities: action.payload
-            };
-        case "SEARCH_CITIES_FAILURE":
-            return {
-                ...state,
-                loading: false,
-                errorMessage: action.error
-            };
-        default:
-            return state;
-    }
-};
 
 function App() {
-    const [state, dispatch] = useReducer(reducer, initialState);
+    const [state, dispatch] = useReducer(weather, initialState);
 
     useEffect(() => {
         fetch(API_URL)
@@ -125,4 +99,6 @@ function App() {
     );
 }
 
-export default App;
+function mapStateToProps(state) {}
+
+export default connect(mapStateToProps)(App);
