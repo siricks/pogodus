@@ -106,3 +106,21 @@ Weather Card Styling
 .weather-icon__container > svg {
   width: 10rem;
 }
+
+.wind-humidity__container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+}
+
+.wind, .humidity {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  &__svg {
+    max-height: 20px;
+    color: blue;
+  }
+}
