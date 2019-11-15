@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pogodus/static/css/main.38ecd946.chunk.css",
-    "main.js": "/pogodus/static/js/main.ffc0ef9c.chunk.js",
-    "main.js.map": "/pogodus/static/js/main.ffc0ef9c.chunk.js.map",
+    "main.css": "/pogodus/static/css/main.904678cc.chunk.css",
+    "main.js": "/pogodus/static/js/main.1c4e8507.chunk.js",
+    "main.js.map": "/pogodus/static/js/main.1c4e8507.chunk.js.map",
     "runtime-main.js": "/pogodus/static/js/runtime-main.231825e8.js",
     "runtime-main.js.map": "/pogodus/static/js/runtime-main.231825e8.js.map",
-    "static/js/2.cab370ba.chunk.js": "/pogodus/static/js/2.cab370ba.chunk.js",
-    "static/js/2.cab370ba.chunk.js.map": "/pogodus/static/js/2.cab370ba.chunk.js.map",
+    "static/js/2.572dc646.chunk.js": "/pogodus/static/js/2.572dc646.chunk.js",
+    "static/js/2.572dc646.chunk.js.map": "/pogodus/static/js/2.572dc646.chunk.js.map",
     "index.html": "/pogodus/index.html",
-    "precache-manifest.168ddcae19196f3d1847c1a178fd66f2.js": "/pogodus/precache-manifest.168ddcae19196f3d1847c1a178fd66f2.js",
+    "precache-manifest.0718fbd5438ab2fb8ef30615f4658c6e.js": "/pogodus/precache-manifest.0718fbd5438ab2fb8ef30615f4658c6e.js",
     "service-worker.js": "/pogodus/service-worker.js",
-    "static/css/main.38ecd946.chunk.css.map": "/pogodus/static/css/main.38ecd946.chunk.css.map",
+    "static/css/main.904678cc.chunk.css.map": "/pogodus/static/css/main.904678cc.chunk.css.map",
     "static/media/AddIcon.857ad6cd.svg": "/pogodus/static/media/AddIcon.857ad6cd.svg",
     "static/media/CityIllustration.82758ac1.svg": "/pogodus/static/media/CityIllustration.82758ac1.svg",
     "static/media/Clouds.6d6a14ed.svg": "/pogodus/static/media/Clouds.6d6a14ed.svg",
@@ -20,14 +20,16 @@
     "static/media/Snow.7c003310.svg": "/pogodus/static/media/Snow.7c003310.svg",
     "static/media/Storm.934895c1.svg": "/pogodus/static/media/Storm.934895c1.svg",
     "static/media/Sunny.5ae379e3.svg": "/pogodus/static/media/Sunny.5ae379e3.svg",
+    "static/media/humidity.95a8abf2.svg": "/pogodus/static/media/humidity.95a8abf2.svg",
     "static/media/logo.17fad0b7.svg": "/pogodus/static/media/logo.17fad0b7.svg",
     "static/media/menu.3fb4ffc8.svg": "/pogodus/static/media/menu.3fb4ffc8.svg",
-    "static/media/search.c6a0effb.svg": "/pogodus/static/media/search.c6a0effb.svg"
+    "static/media/search.c6a0effb.svg": "/pogodus/static/media/search.c6a0effb.svg",
+    "static/media/wind.7eae5900.svg": "/pogodus/static/media/wind.7eae5900.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.231825e8.js",
-    "static/js/2.cab370ba.chunk.js",
-    "static/css/main.38ecd946.chunk.css",
-    "static/js/main.ffc0ef9c.chunk.js"
+    "static/js/2.572dc646.chunk.js",
+    "static/css/main.904678cc.chunk.css",
+    "static/js/main.1c4e8507.chunk.js"
   ]
 }
