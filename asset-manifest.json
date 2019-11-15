@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pogodus/static/css/main.904678cc.chunk.css",
+    "main.css": "/pogodus/static/css/main.c8a4693a.chunk.css",
     "main.js": "/pogodus/static/js/main.1c4e8507.chunk.js",
     "main.js.map": "/pogodus/static/js/main.1c4e8507.chunk.js.map",
     "runtime-main.js": "/pogodus/static/js/runtime-main.231825e8.js",
@@ -8,9 +8,9 @@
     "static/js/2.572dc646.chunk.js": "/pogodus/static/js/2.572dc646.chunk.js",
     "static/js/2.572dc646.chunk.js.map": "/pogodus/static/js/2.572dc646.chunk.js.map",
     "index.html": "/pogodus/index.html",
-    "precache-manifest.0718fbd5438ab2fb8ef30615f4658c6e.js": "/pogodus/precache-manifest.0718fbd5438ab2fb8ef30615f4658c6e.js",
+    "precache-manifest.19b44d5543f989b3022f637e1db70292.js": "/pogodus/precache-manifest.19b44d5543f989b3022f637e1db70292.js",
     "service-worker.js": "/pogodus/service-worker.js",
-    "static/css/main.904678cc.chunk.css.map": "/pogodus/static/css/main.904678cc.chunk.css.map",
+    "static/css/main.c8a4693a.chunk.css.map": "/pogodus/static/css/main.c8a4693a.chunk.css.map",
     "static/media/AddIcon.857ad6cd.svg": "/pogodus/static/media/AddIcon.857ad6cd.svg",
     "static/media/CityIllustration.82758ac1.svg": "/pogodus/static/media/CityIllustration.82758ac1.svg",
     "static/media/Clouds.6d6a14ed.svg": "/pogodus/static/media/Clouds.6d6a14ed.svg",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.231825e8.js",
     "static/js/2.572dc646.chunk.js",
-    "static/css/main.904678cc.chunk.css",
+    "static/css/main.c8a4693a.chunk.css",
     "static/js/main.1c4e8507.chunk.js"
   ]
 }
