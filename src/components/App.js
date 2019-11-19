@@ -63,7 +63,7 @@ function App() {
                                 <WeatherCard key={`${index}-${city.name}`} city={city}/>
                             ))
                         )}
-                        <AddCard/>
+                        {/*<AddCard/>*/}
                     </main>
                     <Footer/>
                 </div>
