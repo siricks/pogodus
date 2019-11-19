@@ -19,7 +19,7 @@ import {lightTheme, darkTheme} from '../styles-theme/theme';
 import { weather } from '../store/reducers';
 import { initialState } from '../store/weather/reducer';
 
-import { defaultCityWeather } from '../modules/openweathermap';
+import { defaultCityWeather, searchCityWeather } from '../modules/openweathermap';
 
 function App() {
     const [state, dispatch] = useReducer(weather, initialState);
@@ -36,27 +36,8 @@ function App() {
     }
     ;
 
-
     const search = searchValue => {
-        dispatch({
-            type: "SEARCH_CITIES_REQUEST"
-        });
-
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800`)
-            .then(response => response.json())
-            .then(jsonResponse => {
-                if (jsonResponse.base === "stations") {
-                    dispatch({
-                        type: "SEARCH_CITIES_SUCCESS",
-                        payload: [jsonResponse]
-                    });
-                } else {
-                    dispatch({
-                        type: "SEARCH_CITIES_FAILURE",
-                        error: jsonResponse.Error
-                    });
-                }
-            });
+        searchCityWeather(searchValue, dispatch);
     };
 
     const {cities, errorMessage, loading} = state;
