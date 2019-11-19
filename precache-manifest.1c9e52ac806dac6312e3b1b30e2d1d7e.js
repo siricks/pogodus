@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe6829246ff95671d892e56f2a6933f9",
+    "revision": "0c29e1939e32e197cc671fa16525b717",
     "url": "/pogodus/index.html"
   },
   {
-    "revision": "d8c2b15efe170ad76a4b",
+    "revision": "6c0a4e85652bc1c4a87c",
     "url": "/pogodus/static/css/main.c8a4693a.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pogodus/static/js/2.572dc646.chunk.js"
   },
   {
-    "revision": "d8c2b15efe170ad76a4b",
-    "url": "/pogodus/static/js/main.1c4e8507.chunk.js"
+    "revision": "6c0a4e85652bc1c4a87c",
+    "url": "/pogodus/static/js/main.57445e70.chunk.js"
   },
   {
     "revision": "cf17b9ebb9b745db6a5f",
