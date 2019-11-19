@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "757af02a31f0a330a879030f67008588",
+    "revision": "a6d65100314e035e830bfeb9efca6009",
     "url": "/pogodus/index.html"
   },
   {
-    "revision": "626af78a33fedde34511",
+    "revision": "799c70bf30db0d210690",
     "url": "/pogodus/static/css/main.c8a4693a.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pogodus/static/js/2.572dc646.chunk.js"
   },
   {
-    "revision": "626af78a33fedde34511",
-    "url": "/pogodus/static/js/main.d70690d9.chunk.js"
+    "revision": "799c70bf30db0d210690",
+    "url": "/pogodus/static/js/main.28f50beb.chunk.js"
   },
   {
     "revision": "cf17b9ebb9b745db6a5f",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pogodus/static/media/Sunny.5ae379e3.svg"
   },
   {
-    "revision": "95a8abf26dc248639fa37ad3ef05309c",
-    "url": "/pogodus/static/media/humidity.95a8abf2.svg"
+    "revision": "295f404946af68ca5ee306e564b091b0",
+    "url": "/pogodus/static/media/humidity.295f4049.svg"
   },
   {
     "revision": "7738ddc6d0535bba35c691ca24ff3fe1",
