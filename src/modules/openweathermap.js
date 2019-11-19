@@ -1,7 +1,19 @@
-const API_URL = "https://api.openweathermap.org/data/2.5/weather?q=Saint Petersburg&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800";
+const BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=";
+const BASE_CITY = "Saint Petersburg";
+const BASE_PARAMS =  "&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800";
+
+/**
+ * get openWeather api url
+ * @param city
+ * @returns {string}
+ */
+function getApiUrl(city) {
+    return `${BASE_URL}${city}${BASE_PARAMS}`;
+}
+
 
 export function defaultCityWeather(dispatch) {
-    fetch(API_URL)
+    fetch(getApiUrl(BASE_CITY))
         .then(response => response.json())
         .then(jsonResponse => {
             dispatch({
@@ -16,7 +28,7 @@ export function searchCityWeather(searchValue, dispatch) {
         type: "SEARCH_CITIES_REQUEST"
     });
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&APPID=e9db0ef1f52e36e18635becd6da63800`)
+    fetch(getApiUrl(searchValue))
         .then(response => response.json())
         .then(jsonResponse => {
             if (jsonResponse.base === "stations") {
