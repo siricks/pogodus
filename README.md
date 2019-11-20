@@ -1,6 +1,14 @@
 Simple weather site based project Minimus in ReactJS with GRID  in CSS and use open weather api. 
 
-It can be start with Docker
+It can be start with Docker.
+
+Build the image and fire up the container:
+
+`$ docker-compose up -d --build`
+
+To stop it use:
+
+`$ docker-compose stop`
 
 ***
 
